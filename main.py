@@ -23,6 +23,7 @@ while running:
         print(result)
         if result == "strik":
             strik += 1
+            print(strik)
     elif a == "log out":
         running = False
 
