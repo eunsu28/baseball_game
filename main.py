@@ -23,10 +23,20 @@ while running:
         print(result)
         if result == "strik":
             strik += 1
-            print(strik)
+            s(0.5)
+            clear()
+            if strik == 3:
+                out += 1
+                print("out")
+                s(1)
+                clear()
+        else:
+            s(0.5)
+            clear()
     elif a == "log out":
         running = False
 
 print("끝!") 
+clear()
 
 #야구 게임
