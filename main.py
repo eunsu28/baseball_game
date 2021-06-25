@@ -27,11 +27,14 @@ while running:
             clear()
             if strik == 3:
                 out += 1
+                strik = 0
                 print("out")
                 s(1)
                 clear()
                 if out == 3:
                     print("공수 교대")
+                    s(2)
+                    clear()
         else:
             s(0.5)
             clear()
