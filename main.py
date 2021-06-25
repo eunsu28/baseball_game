@@ -30,6 +30,8 @@ while running:
                 print("out")
                 s(1)
                 clear()
+                if out == 3:
+                    print("공수 교대")
         else:
             s(0.5)
             clear()
