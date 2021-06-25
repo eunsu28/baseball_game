@@ -1,3 +1,4 @@
+#무한 if문에 감옥
 import os 
 from time import sleep as s
 import random
@@ -31,7 +32,7 @@ while running:
                 print("out")
                 s(1)
                 clear()
-                if out == 3:
+                if out == 3: 
                     print("공수 교대")
                     s(2)
                     clear()
