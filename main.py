@@ -8,7 +8,7 @@ running = True
 
 list_for_random_p = ["strik", "strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
 list_for_random_h = ["strik", "strik" "ball", "fly out", "hit", "homerun", "ground ball"]
-gong_su = "su "
+gong_su = "su"
 strik = 0
 ball = 0
 out = 0
@@ -32,10 +32,21 @@ while running:
                 print("out")
                 s(1)
                 clear()
-                if out == 3: 
+        elif result == "ball":
+            ball ++ 1
+            s(0.5)
+            clear()
+            if ball == 4:
+                print("주자 1루")
+                s(1)
+                clear()
+                ball = 0
+        elif out == 3: 
                     print("공수 교대")
                     s(2)
                     clear()
+                    strik = 0
+                    ball = 0
         else:
             s(0.5)
             clear()
