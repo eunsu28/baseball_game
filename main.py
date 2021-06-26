@@ -8,7 +8,7 @@ running = True
 
 list_for_random_p = ["strik", "strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
 list_for_random_h = ["strik", "strik" "ball", "fly out", "hit", "homerun", "ground ball"]
-gong_su = "su"
+gong_su = "su "
 strik = 0
 ball = 0
 out = 0
