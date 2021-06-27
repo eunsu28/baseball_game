@@ -6,8 +6,7 @@ def clear():
     return os.system("clear")
 running = True
 
-list_for_random_p = ["strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
-list_for_random_h = ["strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
+list_for_random = ["strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
 gong_su = "su"
 strik = 0
 ball = 0
@@ -22,7 +21,7 @@ while running:
     a = input("입력해 주세요: ")
     if a == "s":
         s(0.1)
-        result = random.choice(list_for_random_p)
+        result = random.choice(list_for_random)
         print(result)
         if result == "strik":
             strik += 1
@@ -48,6 +47,7 @@ while running:
 
         elif result == "fly out":
             out += 1
+            print("out")
             s(0.5)
             clear()  
 
@@ -74,7 +74,7 @@ while running:
         print(gong_su)
 
     elif a == "score":
-        print(f"{my_score} : {away_score}")
+        print(f"home  = {my_score} : away = {away_score}")
 
     if out == 3: 
         print("공수 교대")
