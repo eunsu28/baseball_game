@@ -56,7 +56,7 @@ while running:
                 away_score += 1
                 s(0.5)
                 clear()
-            elif gong_su -- "gong":
+            elif gong_su == "gong":
                 my_score += 1
                 s(0.5)
                 clear()
