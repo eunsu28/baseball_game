@@ -12,6 +12,8 @@ gong_su = "su"
 strik = 0
 ball = 0
 out = 0
+my_score = 0
+away_score = 0
 
 first = False
 second = False
