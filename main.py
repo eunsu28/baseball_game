@@ -45,17 +45,30 @@ while running:
                 s(1)
                 clear()
                 ball = 0
+
         elif result == "fly out":
             out += 1
             s(0.5)
-            clear()        
+            clear()  
+
+        elif result == "homerun":
+            print("홈런")
+            s(0.5)
+            clear()
+
         else:
             s(0.5)
             clear()
+
     elif a == "log out":
         running = False
+
     elif a == "out":
         print(out)
+
+    elif a == "gong su":
+        print(gong_su)
+
     if out == 3: 
         print("공수 교대")
         s(2)
@@ -63,6 +76,10 @@ while running:
         strik = 0
         ball = 0
         out = 0
+        if gong_su == "su":
+            gong_su = "gong"
+        elif gong_su == "gong":
+            gong_su = "su"
 
 print("끝!") 
 clear()
