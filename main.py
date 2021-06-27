@@ -52,10 +52,14 @@ while running:
             clear()  
 
         elif result == "homerun":
-            print("홈런")
-            s(0.5)
-            clear()
-
+            if gong_su == "su":
+                away_score += 1
+                s(0.5)
+                clear()
+            elif gong_su -- "gong":
+                my_score += 1
+                s(0.5)
+                clear()
         else:
             s(0.5)
             clear()
@@ -68,6 +72,9 @@ while running:
 
     elif a == "gong su":
         print(gong_su)
+
+    elif a == "score":
+        print(f"{my_score} : {away_score}")
 
     if out == 3: 
         print("공수 교대")
