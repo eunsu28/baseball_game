@@ -6,8 +6,8 @@ def clear():
     return os.system("clear")
 running = True
 
-list_for_random_p = ["strik", "strik"]
-list_for_random_h = ["strik", "strik" "ball", "fly out", "hit", "homerun", "ground ball"]
+list_for_random_p = ["strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
+list_for_random_h = ["strik", "strik", "ball", "fly out", "hit", "homerun", "ground ball"]
 gong_su = "su"
 strik = 0
 ball = 0
@@ -39,10 +39,14 @@ while running:
             clear()
             if ball == 4:
                 print("주자 1루")
+                first = True
                 s(1)
                 clear()
                 ball = 0
-                
+        elif result == "fly out":
+            out += 1
+            s(0.5)
+            clear()        
         else:
             s(0.5)
             clear()
