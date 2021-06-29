@@ -11,6 +11,7 @@ gong_su = "su"
 strik = 0
 ball = 0
 out = 0
+hit = 0
 my_score = 0
 away_score = 0
 
@@ -60,6 +61,21 @@ while running:
                 my_score += 1
                 s(0.5)
                 clear()
+
+        if result == "hit":
+            hit += 1
+            s(1)
+            clear()
+            if hit == 4:
+                if gong_su == "su":
+                    away_score += 1
+                    s(0.5)
+                    clear()
+                elif gong_su == "gong":
+                    my_score += 1
+                    s(0.5)
+                    clear()
+
         else:
             s(0.5)
             clear()
