@@ -47,12 +47,16 @@ while running:
                 ball = 0
 
         elif result == "fly out":
+            strik = 0
+            ball = 0
             out += 1
             print("out")
             s(0.5)
             clear()  
 
         elif result == "homerun":
+            strik = 0
+            ball = 0
             if gong_su == "su":
                 away_score += 1
                 s(0.5)
@@ -63,6 +67,8 @@ while running:
                 clear()
 
         if result == "hit":
+            strik = 0
+            ball = 0
             hit += 1
             s(1)
             clear()
