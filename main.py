@@ -54,6 +54,14 @@ while running:
             s(0.5)
             clear()  
 
+        elif result == "ground balld":
+            strik = 0
+            ball = 0
+            out += 1
+            print("out")
+            s(0.5)
+            clear()
+
         elif result == "homerun":
             strik = 0
             ball = 0
