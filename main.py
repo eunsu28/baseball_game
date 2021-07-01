@@ -119,6 +119,8 @@ while running:
             gong_su = "su"
 
 print("끝!") 
+print(f"{my_score} : {away_score}")
+s(2)
 clear()
 
 #야구 게임
