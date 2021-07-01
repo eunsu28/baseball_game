@@ -54,7 +54,7 @@ while running:
             s(0.5)
             clear()  
 
-        elif result == "ground balld":
+        elif result == "ground ball":
             strik = 0
             ball = 0
             out += 1
