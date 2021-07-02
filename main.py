@@ -1,7 +1,8 @@
-#무한 if문에 감옥
+#야구 게임
 import os 
 from time import sleep as s
 import random
+
 def clear():
     return os.system("clear")
 running = True
@@ -118,9 +119,8 @@ while running:
         elif gong_su == "gong":
             gong_su = "su"
 
-print("끝!") 
+print("경기종료") 
 print(f"{my_score} : {away_score}")
 s(2)
 clear()
 
-#야구 게임
