@@ -66,12 +66,16 @@ while running:
         elif result == "homerun":
             strik = 0
             ball = 0
+            point = 0
+            if first or second or Third == True:
+                point = 2
+                
             if gong_su == "su":
-                away_score += 1
+                away_score += point
                 s(0.5)
                 clear()
             elif gong_su == "gong":
-                my_score += 1
+                my_score += point
                 s(0.5)
                 clear()
 
