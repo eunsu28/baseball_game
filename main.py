@@ -14,11 +14,8 @@ ball = 0
 out = 0
 hit = 0
 my_score = 0
-away_score = 0
+away_score = 0 
 
-first = False
-second = False
-Third = False
 while running:
     a = input("입력해 주세요: ")
     if a == "s":
@@ -66,16 +63,13 @@ while running:
         elif result == "homerun":
             strik = 0
             ball = 0
-            point = 0
-            if first or second or Third == True:
-                point = 2
-                
+
             if gong_su == "su":
-                away_score += point
+                away_score += 1
                 s(0.5)
                 clear()
             elif gong_su == "gong":
-                my_score += point
+                my_score += 1
                 s(0.5)
                 clear()
 
